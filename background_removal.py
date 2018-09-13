@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jan 20 11:00:40 2018
-
-@author: katsuhisa
-based on 
+Remove background from a photo with a human based on 
 http://www.codepasta.com/site/vision/segmentation/
 """
 

@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jan 20 12:06:46 2018
-
-@author: katsuhisa
-set the black background image to white
+Black in the picture becomes white
 """
 
 import cv2

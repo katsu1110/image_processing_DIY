@@ -1,5 +1,7 @@
 # coding: utf-8
-# compress images such that maximum pixel size will be the given value.
+'''
+compress images such that maximum pixel size will be the given value.
+'''
 
 from os import listdir
 from PIL import Image

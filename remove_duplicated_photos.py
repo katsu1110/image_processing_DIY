@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jun 16 17:56:48 2018
+delete duplicated (or quite similar) photos from a specified path (line 14)
 
-@author: katsuhisa
 """
 
 from PIL import Image
@@ -10,6 +9,9 @@ import imagehash
 import numpy as np
 from os import listdir, remove
 from os.path import isfile, join
+
+# path where duplicated photos are stored
+mypath = r"C:\Users\katsuhisa\Google ドライブ\myphoto"
 
 # Maximum Hamming distance required to determine a match (0.0 - 1.0)
 hamming_threshold = 0.3
@@ -24,9 +26,6 @@ def hamming(s1, s2):
         return float(sum(c1 != c2 for c1, c2 in zip(s1, s2))) / float(len(s1))
     except:
         return 1
-        
-# path where duplicated photos are stored
-mypath = r"C:\Users\katsuhisa\Google ドライブ\myphoto"
 
 # photos
 files = [f for f in listdir(mypath) if isfile(join(mypath, f))]
